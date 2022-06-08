@@ -87,6 +87,15 @@ body {
   background-color: hsl(256, 26%, 20%);
   color: #fff;
 }
+.hero::after {
+  content: "";
+  display: block;
+  bottom: 3%;
+  height: 10rem;
+  width: 10rem;
+  background: url("../images/bg-pattern-intro-left-mobile.svg");
+  background-repeat: no-repeat;
+}
 .hero-img {
   width: 100%;
   max-height: 40rem;
@@ -132,6 +141,7 @@ body {
     padding-top: 5rem;
     max-height: 35rem;
   }
+
   .hero-text {
     order: -1;
     /* max-width: 50%; */
@@ -140,7 +150,7 @@ body {
     text-align: left;
     /* padding-left: 5rem; */
   }
-  .hero-title:before {
+  .hero-title::before {
     content: " ";
     display: block;
     width: 7rem;
