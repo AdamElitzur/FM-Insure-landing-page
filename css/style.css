@@ -240,13 +240,14 @@ body {
   .left-svg {
     background: url("../images/bg-pattern-intro-left-desktop.svg");
     background-size: contain;
-    width: 100%;
+    width: 20rem;
+
     height: 100%;
     background-repeat: no-repeat;
     position: absolute;
     bottom: -20rem;
     left: 0;
-    z-index: 3;
+    z-index: 1;
   }
   .right-svg {
     background: url("../images/bg-pattern-intro-right-desktop.svg");
