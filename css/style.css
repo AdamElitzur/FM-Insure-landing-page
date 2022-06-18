@@ -24,8 +24,8 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role="list"],
-ol[role="list"] {
+ul[role='list'],
+ol[role='list'] {
   list-style: none;
 }
 
@@ -81,7 +81,7 @@ select {
 /* **************************** */
 
 body {
-  font-family: "Karla", sans-serif;
+  font-family: 'Karla', sans-serif;
 }
 /* **************************** */
 /*             Nav              */
@@ -142,7 +142,7 @@ body {
 } */
 
 .left-svg {
-  background: url("../images/bg-pattern-intro-left-mobile.svg");
+  background: url('../images/bg-pattern-intro-left-mobile.svg');
   background-size: contain;
   background-repeat: no-repeat;
   width: 10rem;
@@ -152,7 +152,7 @@ body {
   z-index: 1;
 }
 .right-svg {
-  background: url("../images/bg-pattern-intro-right-mobile.svg");
+  background: url('../images/bg-pattern-intro-right-mobile.svg');
   background-size: contain;
   background-repeat: no-repeat;
   width: 11rem;
@@ -177,7 +177,7 @@ body {
   position: relative;
 }
 .hero-title {
-  font-family: "DM Serif Display", serif;
+  font-family: 'DM Serif Display', serif;
   font-size: 3rem;
   letter-spacing: 0.1rem;
   line-height: 3rem;
@@ -200,6 +200,42 @@ body {
   color: hsl(256, 26%, 20%);
 }
 
+/* Main Content */
+
+.main_content {
+  text-align: center;
+  padding: 0 1.5rem;
+}
+
+.card_1,
+.card_2,
+.card_3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.card_1 img,
+.card_2 img,
+.card_3 img {
+  width: 6rem;
+}
+
+.card_1 img,
+.card_1 h3,
+.card_1 p,
+.card_2 img,
+.card_2 h3,
+.card_2 p,
+.card_3 img,
+.card_3 h3,
+.card_3 p {
+  padding-bottom: 0.85rem;
+}
+
+/* Desktop Responsiveness */
 @media (min-width: 767px) {
   .hero {
     display: flex;
@@ -218,7 +254,7 @@ body {
     text-align: left;
   }
   .hero-title::before {
-    content: " ";
+    content: ' ';
     display: block;
     width: 7rem;
     height: 3rem;
@@ -238,7 +274,7 @@ body {
   }
 
   .left-svg {
-    background: url("../images/bg-pattern-intro-left-desktop.svg");
+    background: url('../images/bg-pattern-intro-left-desktop.svg');
     background-size: contain;
     width: 20rem;
 
@@ -250,7 +286,7 @@ body {
     z-index: 1;
   }
   .right-svg {
-    background: url("../images/bg-pattern-intro-right-desktop.svg");
+    background: url('../images/bg-pattern-intro-right-desktop.svg');
     background-size: contain;
     background-repeat: no-repeat;
     width: 23rem;
