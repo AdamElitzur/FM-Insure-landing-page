@@ -233,8 +233,9 @@ body {
 /* **************************** */
 
 .banner {
-  margin-top: 2rem;
   padding: 4rem 2rem;
+  margin: 2rem;
+  margin-top: 20rem;
   background-color: hsl(256, 26%, 20%);
   display: flex;
   flex-direction: column;
@@ -352,11 +353,15 @@ body {
     right: 0;
     z-index: 3;
   }
-
+  .banner-section {
+    display: flex;
+    justify-content: center;
+  }
   .banner {
     margin-left: 5rem;
     margin-right: 5rem;
-    max-width: 70rem;
+    /* max-width: 80rem; */
+    width: 70rem;
     padding: 3rem 2rem;
 
     /* margin: 2rem auto; */
