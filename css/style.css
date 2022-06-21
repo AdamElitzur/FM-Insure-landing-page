@@ -102,21 +102,46 @@ body {
   background: hsl(270, 9%, 17%);
   color: #fff;
 }
-.header {
-  display: flex;
-  padding: 1rem 5rem;
-
-  max-width: 80rem;
-  margin: auto;
-  justify-content: space-between;
-}
-.nav-logo {
-  height: 100%;
+.nav-links {
+  display: none;
   align-self: center;
 }
 .nav-list {
+  justify-content: center;
+  text-align: center;
+}
+.nav-list li {
+  margin: 1rem 0;
+}
+.nav-list li:nth-last-of-type(2) {
+  margin-bottom: 2rem;
+}
+
+.nav-links-shown {
   display: flex;
-  gap: 1.5rem;
+}
+.nav-hamburger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  /* position: absolute;
+  right: 1rem;
+  top: 2rem; */
+}
+.nav-mobile {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+
+  justify-content: flex-start;
+}
+.nav-logo {
+  align-self: center;
 }
 
 .nav-list a:not(.view-plan-button) {
@@ -189,13 +214,16 @@ body {
 .hero-description {
   margin-bottom: 2rem;
 }
-.hero-button {
+.hero-button,
+.banner__button {
   color: #fff;
   border: 1px solid #fff;
 }
 
 .hero-button:hover,
-.hero-button:focus {
+.hero-button:focus,
+.banner__button:hover,
+.banner__button:focus {
   background: #fff;
   color: hsl(256, 26%, 20%);
 }
@@ -236,7 +264,71 @@ body {
 }
 
 /* Desktop Responsiveness */
+/* **************************** */
+/*             Banner           */
+/* **************************** */
+
+.banner {
+  padding: 4rem 2rem;
+  margin: 2rem;
+  margin-top: 20rem;
+  background-color: hsl(256, 26%, 20%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.banner__title {
+  font-family: 'DM Serif Display', serif;
+  color: white;
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  line-height: 3rem;
+}
+.banner__button {
+  margin: 1rem 0;
+  z-index: 2;
+}
+.banner__svg {
+  background: url('../images/bg-pattern-how-we-work-mobile.svg');
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 11rem;
+  position: absolute;
+  right: 0;
+}
+
 @media (min-width: 767px) {
+  .header {
+    padding: 1rem 5rem;
+
+    max-width: 80rem;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .nav-hamburger {
+    display: none;
+  }
+  .nav-logo {
+    align-self: center;
+  }
+  .nav-links {
+    display: inline-block;
+  }
+
+  .nav-list {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    margin: 0;
+  }
+  .nav-list li:nth-last-of-type(2) {
+    margin: 0rem;
+  }
   .hero {
     display: flex;
     justify-content: center;
@@ -289,12 +381,44 @@ body {
     background: url('../images/bg-pattern-intro-right-desktop.svg');
     background-size: contain;
     background-repeat: no-repeat;
-    width: 23rem;
+    width: 21rem;
 
     height: 90%;
     position: absolute;
     top: 0;
     right: 0;
     z-index: 3;
+  }
+  .banner-section {
+    display: flex;
+    justify-content: center;
+  }
+  .banner {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    /* max-width: 80rem; */
+    width: 70rem;
+    padding: 3rem 2rem;
+
+    /* margin: 2rem auto; */
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* padding: 2rem; */
+    flex-direction: row;
+    justify-content: space-between;
+    /* gap: 1rem; */
+  }
+  .banner__title {
+    text-align: left;
+    max-width: min(28rem, 60%);
+    z-index: 2;
+  }
+  .banner__svg {
+    background: url('../images/bg-pattern-how-we-work-desktop.svg');
+    background-repeat: no-repeat;
+    height: 100%;
+    bottom: 0;
+    width: 27rem;
+    z-index: 1;
   }
 }
