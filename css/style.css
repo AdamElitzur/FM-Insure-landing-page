@@ -24,8 +24,8 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role="list"],
-ol[role="list"] {
+ul[role='list'],
+ol[role='list'] {
   list-style: none;
 }
 
@@ -81,7 +81,7 @@ select {
 /* **************************** */
 
 body {
-  font-family: "Karla", sans-serif;
+  font-family: 'Karla', sans-serif;
 }
 /* **************************** */
 /*             Nav              */
@@ -167,7 +167,7 @@ body {
 } */
 
 .left-svg {
-  background: url("../images/bg-pattern-intro-left-mobile.svg");
+  background: url('../images/bg-pattern-intro-left-mobile.svg');
   background-size: contain;
   background-repeat: no-repeat;
   width: 10rem;
@@ -177,7 +177,7 @@ body {
   z-index: 1;
 }
 .right-svg {
-  background: url("../images/bg-pattern-intro-right-mobile.svg");
+  background: url('../images/bg-pattern-intro-right-mobile.svg');
   background-size: contain;
   background-repeat: no-repeat;
   width: 11rem;
@@ -202,7 +202,7 @@ body {
   position: relative;
 }
 .hero-title {
-  font-family: "DM Serif Display", serif;
+  font-family: 'DM Serif Display', serif;
   font-size: 3rem;
   letter-spacing: 0.1rem;
   line-height: 3rem;
@@ -244,7 +244,7 @@ body {
   position: relative;
 }
 .banner__title {
-  font-family: "DM Serif Display", serif;
+  font-family: 'DM Serif Display', serif;
   color: white;
   font-size: 3rem;
   font-weight: 400;
@@ -257,7 +257,7 @@ body {
   z-index: 2;
 }
 .banner__svg {
-  background: url("../images/bg-pattern-how-we-work-mobile.svg");
+  background: url('../images/bg-pattern-how-we-work-mobile.svg');
   background-repeat: no-repeat;
   height: 100%;
   width: 11rem;
@@ -310,7 +310,7 @@ body {
     text-align: left;
   }
   .hero-title::before {
-    content: " ";
+    content: ' ';
     display: block;
     width: 7rem;
     height: 3rem;
@@ -330,7 +330,7 @@ body {
   }
 
   .left-svg {
-    background: url("../images/bg-pattern-intro-left-desktop.svg");
+    background: url('../images/bg-pattern-intro-left-desktop.svg');
     background-size: contain;
     width: 20rem;
 
@@ -342,7 +342,7 @@ body {
     z-index: 1;
   }
   .right-svg {
-    background: url("../images/bg-pattern-intro-right-desktop.svg");
+    background: url('../images/bg-pattern-intro-right-desktop.svg');
     background-size: contain;
     background-repeat: no-repeat;
     width: 21rem;
@@ -378,7 +378,7 @@ body {
     z-index: 2;
   }
   .banner__svg {
-    background: url("../images/bg-pattern-how-we-work-desktop.svg");
+    background: url('../images/bg-pattern-how-we-work-desktop.svg');
     background-repeat: no-repeat;
     height: 100%;
     bottom: 0;
