@@ -9,6 +9,15 @@
   box-sizing: border-box;
 }
 
+:root {
+  --DarkViolet: hsl(256, 26%, 20%);
+  --GrayishBlue: hsl(216, 30%, 68%);
+
+  --VeryDarkViolet: hsl(270, 9%, 17%);
+  --DarkGrayishViolet: hsl(273, 4%, 51%);
+  --VeryLightGray: hsl(0, 0%, 98%);
+}
+
 /* Remove default margin */
 body,
 h1,
@@ -79,6 +88,8 @@ select {
 /* **************************** */
 /*             Styles           */
 /* **************************** */
+
+@import url('https://fonts.google.com/specimen/Karla');
 
 body {
   font-family: 'Karla', sans-serif;
@@ -232,7 +243,8 @@ body {
 
 .main_content {
   text-align: center;
-  padding: 0 1.5rem;
+  padding: 0 2rem;
+  padding-top: 6em;
 }
 
 .card_1,
@@ -263,6 +275,32 @@ body {
   padding-bottom: 0.85rem;
 }
 
+.main_content h2,
+.main_content h3 {
+  font-family: 'DM Serif Display', serif;
+  color: var(--VeryDarkViolet);
+}
+
+.main_content hr {
+  margin-bottom: 1.75em;
+  width: 50%;
+  height: 2px;
+  background-color: var(--DarkViolet);
+}
+
+.main_content h2 {
+  font-size: 2.75rem;
+  padding-bottom: 0.25em;
+}
+
+.main_content h3 {
+  font-size: 1.75rem;
+}
+
+.main_content p {
+  color: var(--DarkGrayishViolet);
+}
+
 /* Desktop Responsiveness */
 /* **************************** */
 /*             Banner           */
@@ -270,8 +308,8 @@ body {
 
 .banner {
   padding: 4rem 2rem;
-  margin: 2rem;
-  margin-top: 20rem;
+  margin: 0 2rem;
+  margin-top: 6rem;
   background-color: hsl(256, 26%, 20%);
   display: flex;
   flex-direction: column;
@@ -313,6 +351,7 @@ body {
   .nav-hamburger {
     display: none;
   }
+
   .nav-logo {
     align-self: center;
   }
@@ -421,4 +460,47 @@ body {
     width: 27rem;
     z-index: 1;
   }
+  .main_content {
+    margin: auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    max-width: 80rem;
+    padding: 0 5rem;
+    padding-top: 7rem;
+  }
+  .main_content hr {
+    width: 7rem;
+    margin: 0;
+  }
+  .card_1,
+  .card_2,
+  .card_3 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .card_1 img,
+  .card_2 img,
+  .card_3 img {
+    width: 4rem;
+  }
+
+  .cards {
+    display: flex;
+  }
+  .main_content p {
+    width: 90%;
+  }
+  .main_content h2 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    letter-spacing: 0.125rem;
+    font-size: 3.25rem;
+  }
+}
+
+.closed-menu {
+  display: none;
 }
