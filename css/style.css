@@ -456,7 +456,7 @@ body {
     padding-left: 5rem;
     padding-right: 5rem;
     padding-top: 5rem;
-    max-height: 35rem;
+    max-height: 40rem;
   }
 
   .hero-text {
@@ -478,7 +478,7 @@ body {
   }
   .hero-img {
     /* width: max(100%, 40rem); */
-    max-width: 30rem;
+    width: 38rem;
     /* position: relative;
     right: 20%;
     top: 50%; */
