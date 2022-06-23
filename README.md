@@ -52,7 +52,7 @@ I would love to keep collaborating as it's super exciting and fun to be working 
 
 ## Author
 
-- Frontend Mentor - [@AdamEli](https://www.frontendmentor.io/profile/adamelitzur)
+-   Frontend Mentor - [@AdamElitzur](https://www.frontendmentor.io/profile/adamelitzur)
 - Twitter - [@adamcandoit](https://twitter.com/adamcandoit)
 
 ## Acknowledgments
