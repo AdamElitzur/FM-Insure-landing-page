@@ -138,9 +138,6 @@ body {
   background: none;
   border: none;
   cursor: pointer;
-  /* position: absolute;
-  right: 1rem;
-  top: 2rem; */
 }
 .nav-mobile {
   display: flex;
@@ -178,11 +175,6 @@ body {
   color: #fff;
   position: relative;
 }
-
-/* .content_container {
-  position: relative;
-  background-color: blue;
-} */
 
 .left-svg {
   background: url("../images/bg-pattern-intro-left-mobile.svg");
@@ -297,8 +289,8 @@ body {
 }
 
 .main_content h2 {
-  font-size: 2.75rem;
-  padding-bottom: 0.25em;
+  font-size: 3rem;
+  margin-bottom: 2.5rem;
 }
 
 .main_content h3 {
@@ -479,11 +471,7 @@ body {
     margin-top: 0;
   }
   .hero-img {
-    /* width: max(100%, 40rem); */
     width: 38rem;
-    /* position: relative;
-    right: 20%;
-    top: 50%; */
     position: relative;
     top: 0%;
   }
@@ -505,7 +493,6 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     width: 21rem;
-
     height: 90%;
     position: absolute;
     top: 0;
@@ -519,17 +506,11 @@ body {
   .banner {
     margin-left: 5rem;
     margin-right: 5rem;
-    /* max-width: 80rem; */
+    margin-bottom: 3rem;
     width: 70rem;
     padding: 3rem 2rem;
-
-    /* margin: 2rem auto; */
-    /* margin-left: auto;
-    margin-right: auto; */
-    /* padding: 2rem; */
     flex-direction: row;
     justify-content: space-between;
-    /* gap: 1rem; */
   }
   .banner__title {
     text-align: left;
