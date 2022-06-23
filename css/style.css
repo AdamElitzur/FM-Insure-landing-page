@@ -252,6 +252,7 @@ body {
   text-align: center;
   padding: 0 2rem;
   padding-top: 6em;
+  margin-top: 3rem;
 }
 
 .card_1,
@@ -290,8 +291,8 @@ body {
 
 .main_content hr {
   margin-bottom: 1.75em;
-  width: 50%;
-  height: 2px;
+  width: 10rem;
+  height: 1px;
   background-color: var(--DarkViolet);
 }
 
@@ -393,6 +394,7 @@ body {
   list-style-type: none;
   text-transform: uppercase;
   font-weight: 800;
+  margin: 0.5rem;
 }
 .footer__links * {
   z-index: 2;
@@ -543,7 +545,8 @@ body {
     z-index: 1;
   }
   .main_content {
-    margin: auto;
+    margin: 10rem auto;
+    margin-bottom: 3rem;
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -553,7 +556,9 @@ body {
     padding-top: 7rem;
   }
   .main_content hr {
+    color: hsl(0, 0%, 80%);
     width: 7rem;
+    height: 1px;
     margin: 0;
   }
   .card_1,
