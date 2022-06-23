@@ -371,7 +371,7 @@ body {
 
 .footer__top__logos {
   display: flex;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 .footer__top__logos *:hover,
 .footer__top__logos *:focus {
